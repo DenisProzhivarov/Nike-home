@@ -302,6 +302,8 @@ body {
 	font-size: 14px;
 	height: 32px;
 	cursor: pointer;
+	position: relative;
+	z-index: 1000;
 }
 
 #menucheck {
