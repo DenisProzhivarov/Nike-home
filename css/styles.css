@@ -204,6 +204,7 @@ body {
 .btn:active,
 .btn:focus {
 	background: #3a414b;
+	cursor: pointer;
 }
 
 .menu {
