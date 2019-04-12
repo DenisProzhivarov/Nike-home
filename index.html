@@ -14,73 +14,60 @@
 	<meta name="description" content="">
 </head>
 <body>
-	<div class="list">
+	<div class="card">
 	<header>
 		<div class="container">
-			<img src="img/logo.png" class="logo" alt="">
+			<a href="#">
+				<img src="img/logo.png" class="logo" alt="">
+			</a>
 		</div>
 	</header>
+
 	<main>
 		<div class="container">
-			<ul class="main__list">
-				<li class="main__item main__item--big">
-						<img src="img/cross.png" class="main__img" alt="">
-						<ul class="main__item--big">
-							<li class="main__circle main__circle--purple"></li>
-							<li class="main__circle main__circle--white"></li>
-							<li class="main__circle main__circle--red"></li>
-							<li class="main__circle main__circle--blue"></li>
-						</ul>
-				</li>
-				<li class="main__item main__item--middle">
-					<ul class="main__list">
-						<li>
-							<h2 class="main_healine">Nike SB Stefan Janoski Max</h2>
-						</li>
-						<li>
-							<p class="main_text">Unisex Skateboarding Shoe (Men's Sizing)</p>
-						</li>
-						<li>
-							<ul class="main__list main__list--padding" data-stars="3">
-								<li class="main__item main__item--star">
+				<div class="photo">
+						<img src="img/cross.png" class="photo__img" alt="">
+				</div>
+				<div class="info">
+						<h1 class="info__healine">Nike SB Stefan Janoski Max Nike SB Stefan Janoski Max</h1>
+						<p class="info__text">Unisex Skateboarding Shoe (Men's Sizing)</p>
+							<ul class="stars" data-stars="3">
+								<li class="stars stars__star">
 									<!-- <img src="img/star.png" alt="" class="star"> -->
-									
 									<i class="fas fa-star"></i>
 								</li>
-								<li class="main__item main__item--star">
-									<i class="fas fa-star"></i>
-									<!-- <img src="img/star.png" alt=""> -->
-								</li>
-								<li class="main__item main__item--star">
+								<li class="stars stars__star">
 									<i class="fas fa-star"></i>
 									<!-- <img src="img/star.png" alt=""> -->
 								</li>
-								<li class="main__item main__item--star">
+								<li class="stars stars__star">
 									<i class="fas fa-star"></i>
 									<!-- <img src="img/star.png" alt=""> -->
 								</li>
-								<li class="main__item main__item--star">
+								<li class="stars stars__star">
+									<i class="fas fa-star"></i>
+									<!-- <img src="img/star.png" alt=""> -->
+								</li>
+								<li class="stars stars__star">
 									<i class="fas fa-star"></i>
 									<!-- <img src="img/star.png" alt=""> -->
 								</li>
 							</ul>
-						</li>
-<!-- 						<li>
-							<ul class="main__list">
-								<li class="main__item main__item--left">
-									<button class="btn">Size<i class="fas fa-chevron-down main__item--arrow"></i></button>
-								</li>
-								<li class="main__item main__item--left">
-									<button class="btn">Qty<i class="fas fa-chevron-down main__item--arrow"></i></button>
-								</li>
-							</ul>
-						</li> -->
-						<li>
-							<ul class="main__list">
-								<li class="main__item main__item--left">
+							<div class="menu">
 									<div class="submenu">
-											<label class="submenu__toggler" for="menucheck">Size<i class="fas fa-chevron-down main__item--arrow"></i></label>
-											<input  id="menucheck" type="checkbox"> <!-- class="submenu__toggler" -->
+										<i class="fas fa-chevron-down submenu__arrow submenu__arrow--pos"></i>
+										<select name="select1" id="" class="submenu__select">
+											<option selected="selected" class='submenu__option'>Size</option>
+											<option value="" class='submenu__option'>Item1</option>
+											<option value="" class='submenu__option'>Item2</option>
+											<option value="" class='submenu__option'>Item3</option>
+										</select>
+									</div>
+						
+								
+									<div class="submenu submenu--list">
+											<label class="submenu__toggler" for="menucheck2">Qty<i class="fas fa-chevron-down submenu__arrow"></i></label>
+											<input  id="menucheck2" type="checkbox"> 
 											<ul class="submenu__list">
 												<li class="submenu__item">
 													<a href="" class="submenu__link">Item1</a>
@@ -93,32 +80,16 @@
 												</li>
 											</ul>
 									</div>
-								</li>
-								<li class="main__item main__item--left">
-									<div class="submenu">
-											<label class="submenu__toggler" for="menucheck2">Qty<i class="fas fa-chevron-down main__item--arrow"></i></label>
-											<input  id="menucheck2" type="checkbox"> <!-- class="submenu__toggler" -->
-											<ul class="submenu__list">
-												<li class="submenu__item">
-													<a href="" class="submenu__link">Item1</a>
-												</li>
-												<li class="submenu__item">
-													<a href="" class="submenu__link">Item2</a>
-												</li>
-												<li class="submenu__item">
-													<a href="" class="submenu__link">Item3</a>
-												</li>
-											</ul>
-									</div>
-								</li>
-							</ul>
-						</li>
-							<button class="btn btn--long">Add to cart</button>
-						</li>
-					</ul>
-				</li>
-			</ul>
-			
+							</div>
+						<button class="btn btn--long">Add to cart</button>
+					</div>
+				</div>
+				<ul class="slaider">
+							<li class="slaider__circle slaider__circle--purple"></li>
+							<li class="slaider__circle slaider__circle--white"></li>
+							<li class="slaider__circle slaider__circle--red"></li>
+							<li class="slaider__circle slaider__circle--blue"></li>
+				</ul>
 		</div>
 	</main>
 	</div>

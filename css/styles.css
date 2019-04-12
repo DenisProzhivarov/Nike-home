@@ -12,14 +12,13 @@ html {
 
 body {
 	font-family: 'Montserrat', sans-serif;
-	/* font-family: ''; */
 	font-size: 1.8rem;
 	line-height: 1.6;
 	color: #fff;
 	min-height: 100%;
 	background: #111a28 center no-repeat;
 	background-image: url('../img/phone.png');
-	background-size: contain;
+	background-size: cover;
 	position: relative;
 	 
 }
@@ -29,8 +28,7 @@ body {
 	width: 640px;
 }
 
-.list {
-	
+.card {
 	width: 686px;
 	height: 381px;
 	background: #111a28;
@@ -47,74 +45,70 @@ body {
 	width: 65px;
 	height: 33px;
 	margin-top: 20px;
-	/* margin: 20px; */
 }
 
-.main__list {
-	list-style-type: none;
-	padding: 0;
-}
-
-
-.main__list--padding {
-	padding-bottom: 20px;
-	padding-top: 14px;
-	font-size: 0;
-}
-
-.main_healine {
+.info__healine {
 	margin: 0;
 	font-size: 24px;
 	line-height: 26px;
 	color: #e1e1e1;
 	font-weight: 400;
+	max-height: 52px;
+	overflow: hidden;
+	padding: 0 1px;
 }
 
-.main_text {
+.info__text {
 	font-size: 14px;
-	color: #49505a/* #e1e1e1 */;
+	color: #49505a;
 	white-space: nowrap;
-	padding-top: 12px;
 	padding-bottom: 0;
 	margin: 0;
 	overflow: hidden;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 12px 1px 0;
 }
 
-.main__item {
+.photo {
 	display: inline-block;
-	/* outline: 2px solid red; */
-	width: 48%;
 	text-decoration: none;
-	vertical-align: middle;
-}
-
-.main__item--left {
-	/* text-align: left; */
-	padding-left: 0;
-	display: inline-block;
-	width: auto;
-}
-
-.main__item--big {
-	padding-left: 0;
 	width: 60%;
-	text-align: center;
-	margin: 0 auto;
-	padding-top: 45px;
-	padding-right: 10px;
+	height: 270px;
+	max-height: 100%;
+	position: relative;
 }
-.main__item--middle {
+
+.photo__img {
+	max-width: 95%;
+	max-height: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);	
+}
+
+.info {
+	margin-top: 18px;
+	display: inline-block;
+	text-decoration: none;
 	width: 35%;
 	vertical-align: top;
 	padding-left: 30px;
 }
 
-.main__img {
-	/* padding-left: 20px; */
-	
+.stars {
+	display: inline-block;
+	padding: 0;
+	padding-bottom: 20px;
+	padding-top: 14px;
+	font-size: 0;
+
 }
 
-.main__item--star {
+.stars__star {
+	padding: 0;
 	width: auto;
 	text-align: left;
 	font-size: 12px;
@@ -122,50 +116,39 @@ body {
 	letter-spacing: 0px;
 }
 
-[data-stars="0"] .main__item--star:nth-child(-n) {
+[data-stars="0"] .stars__star:nth-child(-n) {
 	color: #c99f1a; 
 }
 
-[data-stars="1"] .main__item--star:nth-child(-n+1) {
+[data-stars="1"] .stars__star:nth-child(-n+1) {
 	color: #c99f1a; 
 }
 
-[data-stars="2"] .main__item--star:nth-child(-n+2) {
+[data-stars="2"] .stars__star:nth-child(-n+2) {
 	color: #c99f1a; 
 }
 
-[data-stars="3"] .main__item--star:nth-child(-n+3) {
+[data-stars="3"] .stars__star:nth-child(-n+3) {
 	color: #c99f1a; 
 }
 
-[data-stars="4"] .main__item--star:nth-child(-n+4) {
+[data-stars="4"] .stars__star:nth-child(-n+4) {
 	color: #c99f1a; 
 }
 
-[data-stars="5"] .main__item--star:nth-child(-n+5) {
+[data-stars="5"] .card__item--star:nth-child(-n+5) {
 	color: #c99f1a; 
 }
 
-/* .main__item--star:hover,
-.main__item--star:focus,
-.main__item--star:active {
-	 color: #c99f1a; 
-} */
-
-.main__item--arrow {
-	font-size: 14px;
-	opacity: .3;
-	vertical-align: middle;
-	margin-left: 5px;
+.slaider {
+	width: 60%;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	
 }
 
-/* i {
-	letter-spacing: 0px;
-} */
-
-
-
-.main__circle {
+.slaider__circle {
 	display: inline-block;
 	border-radius: 50%;
 	width: 12px;
@@ -173,25 +156,25 @@ body {
 	text-align: center;
 }
 
-.main__circle--purple {
+.slaider__circle--purple {
 	background: #1f273f;
 }
  
-.main__circle--white {
+.slaider__circle--white {
 	background: #ffffff;
 }
 
-.main__circle--red {
+.slaider__circle--red {
 	background: #ed3333;
 }
 
-.main__circle--blue {
+.slaider__circle--blue {
 	background: #29e3ea;
 }
 
-.main__circle:hover,
-.main__circle:focus,
-.main__circle:active {
+.slaider__circle:hover,
+.slaider__circle:focus,
+.slaider__circle:active {
 	transform: scale(1.5, 1.5);
 	border: 1px solid #7e838b;
 }
@@ -199,19 +182,21 @@ body {
 .btn {
 	width: 70px;
 	font-size: 14px;
-	height: 32px;
 	border: 1px solid #b8babf;
 	color: #b8babf;
 	background: transparent;
 	margin-bottom: 28px;
 	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .btn--long {
 	margin-top: 30px;
 	width: 185px;
-	height: 40px;
-	/* background: #3a414b; */
+	padding: 10px 5px;
+	margin-bottom: 0;
 }
 
 
@@ -221,16 +206,83 @@ body {
 	background: #3a414b;
 }
 
-.submenu {
+.menu {
+	font-size: 0;
+}
+
+.submenu	 {
+	vertical-align: top;
 	display: inline-block;
 	position: relative;
-	width: 70px;
-	font-size: 14px;
-	height: 32px;
 	border: 1px solid #b8babf;
+	width: 70px;
+}
+
+.submenu--list {
+	position: relative;
+	font-size: 14px;
 	color: #b8babf;
 	background: transparent;
-	/* text-align: center; */
+	border: 1px solid #b8babf;
+	width: 70px;
+	height: 100%;
+	margin-left: 15px;
+	font-size: 14px;
+	z-index: 1000;
+	padding: 2px 0;
+	height:32px;
+}
+
+.submenu__toggler {
+	padding: 1px 0;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	/* line-height: 28px; */
+	cursor: pointer;
+	position: relative;
+	z-index: 1000;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.submenu__select {
+	padding-left: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	z-index: 1000;
+	height: 100%;
+	height: 30px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 0;
+    background: transparent;
+    border: 0;
+    color: #b8babf;
+    line-height: 1;
+    -webkit-appearance: none;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.submenu__option {
+	color: black;
+}
+
+/* галочка в кнопке */
+.submenu__arrow {
+	font-size: 14px;
+	opacity: .3;
+	vertical-align: middle;
+	margin-left: 10px;	
+}
+
+.submenu__arrow--pos {
+	position: absolute;
+	left:36px;
+	top: 9px;
 }
 
 .submenu:hover,
@@ -239,15 +291,13 @@ body {
 	background: #3a414b;
 }
 
-
 .submenu__list {
 	width: 100%;
 	padding: 0;
-	/* display: inline-block; */
 	list-style: none;
 	background: #fff;
 	position: absolute;
-	top: 41px;
+	top: 28px;
 	display: none;
 	transition: all .4s ease-in;
 }
@@ -260,7 +310,6 @@ body {
 	color: #b8babf;
 	vertical-align: middle;
 }
-
 
 .submenu__link {
 	display: inline-block;
@@ -288,23 +337,11 @@ body {
 	border: 10px solid transparent;
 	border-bottom-color: #b8babf;
 	position: absolute;
-	bottom: 72px;
+	bottom: 60px;
 	left: 50%;
-	transform: translate(-50%, 0);
+	transform: translate(-50%, -65%);
 }
 
-.submenu__toggler {
-	display: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	line-height: 27px;
-	width: 70px;
-	font-size: 14px;
-	height: 32px;
-	cursor: pointer;
-	position: relative;
-	z-index: 1000;
-}
 
 #menucheck {
 	display: none;
